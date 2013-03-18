@@ -820,7 +820,8 @@
                     result.push(',' + space);
                 }
             }
-            result = parenthesize(result, Precedence.Sequence, precedence);
+            //result = parenthesize(result, Precedence.Sequence, precedence);
+            result = ['(', result, ')'];
             break;
 
         case Syntax.AssignmentExpression:
